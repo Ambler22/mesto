@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Место</title>
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body class="page">
+    <header class="header page__content">
+        <img src="./images/header.png" class="header__logo" alt="логотип">
+    </header>
+    <main>
+        <section class="profile page__content">
+            <img src="./images/avatar.jpg" class="profile__avatar" alt="Аватар">
+            <div class="profile__info">
+                <div class="profile__add">
+                    <h1 class="profile__name">Жак-Ив Кусто</h1>
+                    <button type="button" class="profile__edit hover"></button>
+                </div>
+                <p class="profile__jod">Исследователь океана</p>
+            </div>
+            <div class="profile__button hover">
+                <img src="./images/plus.png" class="profile__button_img" alt="Кнопка">
+            </div>
+        </section>
+        <section class="cards page__content">
+            <div class="card">
+                <img src="./images/grid-img1.jpg" class="card__img" alt="Карачаевск">
+                <div class="card__description">
+                    <h3 class="card__text">Карачаевск</h3>
+                    <button type="button" class="card__like"></button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/grid-img2.jpg" class="card__img" alt="Гора Эльбрус">
+                <div class="card__description">
+                    <h3 class="card__text">Гора Эльбрус</h3>
+                    <button type="button" class="card__like"></button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/grid-img3.jpg" class="card__img" alt="Домбай">
+                <div class="card__description">
+                    <h3 class="card__text">Домбай</h3>
+                    <button type="button" class="card__like"></button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/grid-img2.jpg" class="card__img" alt="Гора Эльбрус">
+                <div class="card__description">
+                    <h3 class="card__text">Гора Эльбрус</h3>
+                    <button type="button" class="card__like"></button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/grid-img3.jpg" class="card__img" alt="Домбай">
+                <div class="card__description">
+                    <h3 class="card__text">Домбай</h3>
+                    <button type="button" class="card__like"></button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/grid-img1.jpg" class="card__img" alt="Карачаево-Черкессия">
+                <div class="card__description">
+                    <h3 class="card__text">Карачаево-Черкессия</h3>
+                    <button type="button" class="card__like"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer page__content">
+        <p class="footer__copyright">&copy; 2021 Дроздов Роман</p>
+    </footer>
+
+    <div class="popup">
+        <div class="popup__content">
+            <h2 class="popup__title">Редактировать профиль</h2>
+            <form action="#" name="form">
+                <fieldset class="popup-form">
+                    <input type="text" name="name" class="popup-form__input" value="" placeholder="Введите имя"
+                        tabindex="1">
+                    <input type="text" name="description" class="popup-form__input" value=""
+                        placeholder="Введите описание" tabindex="2">
+                    <button type="submit" class="popup-form__button">Сохранить</button>
+                </fieldset>
+            </form>
+            <button type="button" class="popup__img-close hover"></button>
+        </div>
+    </div>
+    <script src="./scripts/index.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.profile__add {
+    padding-top: 22px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+@media (max-width: 720px) {
+    .profile__add {
+        padding-top: 26px;
+    }
+}
