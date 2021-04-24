@@ -17,6 +17,7 @@
         right: -28px;
         bottom: 8px;
         background-image: url(../../../images/Edit\ Button-mini.svg);
+        background-repeat: no-repeat;
         width: 18px;
         height: 18px;
     }
