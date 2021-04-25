@@ -11,7 +11,7 @@
 
 <body class="page">
     <header class="header page__content">
-        <img src="./images/header.png" class="header__logo" alt="логотип">
+        <img src="./images/header.svg" class="header__logo" alt="логотип">
     </header>
     <main>
         <section class="profile page__content">
@@ -25,48 +25,48 @@
                     <p class="profile__jod">Исследователь океана</p>
                 </div>
             </div>
-            <button type="submit" class="profile__button hover"></button>
+            <button type="button" class="profile__button hover"></button>
         </section>
         <section class="cards page__content">
             <div class="card">
                 <img src="./images/grid-img1.jpg" class="card__img" alt="Карачаевск">
                 <div class="card__description">
-                    <p class="card__text">Карачаевск</p>
+                    <h4 class="card__text">Карачаевск</h4>
                     <button type="button" class="card__like"></button>
                 </div>
             </div>
             <div class="card">
                 <img src="./images/grid-img2.jpg" class="card__img" alt="Гора Эльбрус">
                 <div class="card__description">
-                    <p class="card__text">Гора Эльбрус</p>
+                    <h4 class="card__text">Гора Эльбрус</h4>
                     <button type="button" class="card__like"></button>
                 </div>
             </div>
             <div class="card">
                 <img src="./images/grid-img3.jpg" class="card__img" alt="Домбай">
                 <div class="card__description">
-                    <p class="card__text">Домбай</p>
+                    <h4 class="card__text">Домбай</h4>
                     <button type="button" class="card__like"></button>
                 </div>
             </div>
             <div class="card">
                 <img src="./images/grid-img2.jpg" class="card__img" alt="Гора Эльбрус">
                 <div class="card__description">
-                    <p class="card__text">Гора Эльбрус</p>
+                    <h4 class="card__text">Гора Эльбрус</h4>
                     <button type="button" class="card__like"></button>
                 </div>
             </div>
             <div class="card">
                 <img src="./images/grid-img3.jpg" class="card__img" alt="Домбай">
                 <div class="card__description">
-                    <p class="card__text">Домбай</p>
+                    <h4 class="card__text">Домбай</h4>
                     <button type="button" class="card__like"></button>
                 </div>
             </div>
             <div class="card">
                 <img src="./images/grid-img1.jpg" class="card__img" alt="Карачаево-Черкессия">
                 <div class="card__description">
-                    <p class="card__text">Карачаево-Черкессия</p>
+                    <h4 class="card__text">Карачаево-Черкессия</h4>
                     <button type="button" class="card__like"></button>
                 </div>
             </div>
@@ -80,12 +80,12 @@
         <div class="popup__content">
             <h2 class="popup__title">Редактировать профиль</h2>
             <form action="#" name="form">
-                <fieldset class="popup-form">
-                    <input type="text" name="name" class="popup-form__input" value="" placeholder="Введите имя"
+                <fieldset class="form-container">
+                    <input type="text" name="name" class="form-container__input" value="" placeholder="Введите имя"
                         tabindex="1">
-                    <input type="text" name="description" class="popup-form__input" value=""
+                    <input type="text" name="description" class="form-container__input" value=""
                         placeholder="Введите описание" tabindex="2">
-                    <button type="submit" class="popup-form__button">Сохранить</button>
+                    <button type="submit" class="form-container__button">Сохранить</button>
                 </fieldset>
             </form>
             <button type="button" class="popup__img-close hover"></button>

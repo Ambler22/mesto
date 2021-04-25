@@ -1,4 +1,4 @@
-.popup-form__input {
+.form-container__input {
     border: 0;
     width: 100%;
     height: 27px;
@@ -12,6 +12,6 @@
     line-height: 17px;
 }
 
-.popup-form__input:first-of-type {
+.form-container__input:first-of-type {
     margin: 0;
 }

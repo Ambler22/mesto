@@ -7,12 +7,14 @@
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
+    text-overflow: ellipsis;
+    max-width: 336px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 @media (max-width: 720px) {
     .profile__jod {
-        font-style: normal;
-        font-weight: normal;
         font-size: 14px;
         line-height: 17px;
         text-align: center;
