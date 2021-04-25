@@ -1,8 +1,9 @@
 .profile__add {
-    padding-top: 22px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     position: relative;
+    align-items: baseline;
 }
 
 @media (max-width: 720px) {

@@ -1,21 +1,17 @@
 .profile__edit {
     margin-left: 19px;
-    margin-bottom: 9px;
+    /*margin-bottom: 9px;*/
     border: none;
     background-image: url(../../../images/Edit\ Button.svg);
     background-color: transparent;
     width: 24px;
     height: 24px;
-    align-self: flex-end;
     cursor: pointer;
 }
 
 @media (max-width: 720px) {
     .profile__edit {
-        margin: 0;
-        position: absolute;
-        right: -28px;
-        bottom: 8px;
+        margin-left: 10;
         background-image: url(../../../images/Edit\ Button-mini.svg);
         background-repeat: no-repeat;
         width: 18px;

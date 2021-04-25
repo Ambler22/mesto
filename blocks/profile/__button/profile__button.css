@@ -5,15 +5,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    right: 0;
-    bottom: 35px;
-    cursor: pointer;
+    background-image: url(../../../images/plus.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media (max-width: 720px) {
     .profile__button {
         width: 282px;
-        bottom: 0;
     }
 }
