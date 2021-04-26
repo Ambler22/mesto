@@ -4,6 +4,7 @@
 
 @media (max-width: 720px) {
     .profile__content {
+        max-width: 282px;
         margin: 0;
     }
 }
