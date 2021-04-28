@@ -1,5 +1,6 @@
 .profile__button {
     border: 2px solid white;
+    border-radius: 2px;
     width: 150px;
     height: 50px;
     display: flex;
@@ -9,6 +10,7 @@
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
 }
 
 @media (max-width: 720px) {
