@@ -3,6 +3,7 @@
     top: 18px;
     right: 15px;
     background-image: url(../../../images/delete.svg);
+    background-repeat: no-repeat;
     border: none;
     background-color: transparent;
     width: 18px;
