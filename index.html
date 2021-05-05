@@ -28,55 +28,13 @@
             <button type="button" class="profile__button hover"></button>
         </section>
         <section class="cards page__content">
-            <div class="card">
-                <img src="./images/grid-img1.jpg" class="card__img" alt="Карачаевск">
-                <div class="card__description">
-                    <h2 class="card__text">Карачаевск</h2>
-                    <button type="button" class="card__like"></button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/grid-img2.jpg" class="card__img" alt="Гора Эльбрус">
-                <div class="card__description">
-                    <h2 class="card__text">Гора Эльбрус</h2>
-                    <button type="button" class="card__like"></button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/grid-img3.jpg" class="card__img" alt="Домбай">
-                <div class="card__description">
-                    <h2 class="card__text">Домбай</h2>
-                    <button type="button" class="card__like"></button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/grid-img2.jpg" class="card__img" alt="Гора Эльбрус">
-                <div class="card__description">
-                    <h2 class="card__text">Гора Эльбрус</h2>
-                    <button type="button" class="card__like"></button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/grid-img3.jpg" class="card__img" alt="Домбай">
-                <div class="card__description">
-                    <h2 class="card__text">Домбай</h2>
-                    <button type="button" class="card__like"></button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/grid-img1.jpg" class="card__img" alt="Карачаево-Черкессия">
-                <div class="card__description">
-                    <h2 class="card__text">Карачаево-Черкессия</h2>
-                    <button type="button" class="card__like"></button>
-                </div>
-            </div>
         </section>
     </main>
     <footer class="footer page__content">
         <p class="footer__copyright">&copy; 2021 Дроздов Роман</p>
     </footer>
 
-    <div class="popup">
+    <div class="popup popup-profile">
         <div class="popup__content">
             <h2 class="popup__title">Редактировать профиль</h2>
             <form action="#" name="form">
@@ -85,12 +43,48 @@
                         tabindex="1">
                     <input type="text" name="description" class="form-container__input" value=""
                         placeholder="Введите описание" tabindex="2">
-                    <button type="submit" class="form-container__button">Сохранить</button>
+                    <button type="submit" class="form-container__button form-container__button_profile">Сохранить</button>
                 </fieldset>
             </form>
             <button type="button" class="popup__img-close hover"></button>
         </div>
     </div>
+    
+    <div class="popup popup__cards">
+        <div class="popup__content">
+            <h2 class="popup__title">Новое место</h2>
+            <form action="#" name="form-cards">
+                <fieldset class="form-container">
+                    <input type="text" name="title" class="form-container__input form-container__input_title" value="" placeholder="Название"
+                        tabindex="1">
+                    <input type="text" name="image" class="form-container__input form-container__input_image" value=""
+                        placeholder="Ссылка на картинку" tabindex="2">
+                <button type="submit" class="form-container__button form-container__button_cards">Создать</button>
+            </fieldset>
+            </form>
+            <button type="button" class="popup__img-close popup__img-close_cards hover"></button>
+        </div>
+    </div>
+
+    <div class="popup popup-image">
+        <div class="popup-image__content">
+            <img src="" alt="" class="popup-image__photo">
+            <h2 class="popup-image__title"></h2>
+            <button type="button" class="popup-image__close hover"></button>
+        </div>
+    </div>
+
+    <template id="card-template">
+        <div class="card">
+            <button type="button" class="card__delete hover"></button>
+            <img src="" class="card__img" alt="">
+            <div class="card__description">
+                <h2 class="card__text"></h2>
+                <button type="button" class="card__like" area-label="Нравится"></button>
+            </div>
+        </div>
+    </template>
+
     <script src="./scripts/index.js" defer></script>
 </body>
 
