@@ -39,10 +39,10 @@
             <h2 class="popup__title">Редактировать профиль</h2>
             <form action="#" name="form-profile">
                 <fieldset class="form-container">
-                    <input type="text" name="name" class="form-container__input" value="" placeholder="Введите имя"
+                    <input type="text" name="name" class="form-container__input" value="" required="Введите имя"
                         tabindex="1">
                     <input type="text" name="description" class="form-container__input" value=""
-                        placeholder="Введите описание" tabindex="2">
+                    required="Введите описание" tabindex="2">
                     <button type="submit" class="form-container__button form-container__button_profile">Сохранить</button>
                 </fieldset>
             </form>
@@ -57,12 +57,12 @@
                 <fieldset class="form-container">
                     <input type="text" name="title" class="form-container__input form-container__input_title" value="" placeholder="Название"
                         tabindex="1">
-                    <input type="text" name="image" class="form-container__input form-container__input_image" value=""
+                    <input type="url" name="image" class="form-container__input form-container__input_image" value=""
                         placeholder="Ссылка на картинку" tabindex="2">
                 <button type="submit" class="form-container__button form-container__button_cards">Создать</button>
             </fieldset>
             </form>
-            <button type="button" class="popup__img-close popup__img-close_cards hover"></button>
+            <button type="button" class="popup__img-close hover"></button>
         </div>
     </div>
 
@@ -70,7 +70,7 @@
         <div class="popup-image__content">
             <img src="#" class="popup-image__photo" alt="Фото места">
             <h2 class="popup-image__title"></h2>
-            <button type="button" class="popup__img-close popup-image__close hover"></button>
+            <button type="button" class="popup__img-close hover"></button>
         </div>
     </div>
 
@@ -80,11 +80,12 @@
             <img src="#" class="card__img" alt="Фото места">
             <div class="card__description">
                 <h2 class="card__text"></h2>
-                <button type="button" class="card__like" area-label="Нравится"></button>
+                <button type="button" class="card__like" aria-label="Нравится"></button>
             </div>
         </div>
     </template>
 
+    <script src="./scripts/initial-Cards.js"></script>
     <script src="./scripts/index.js" defer></script>
 </body>
 
