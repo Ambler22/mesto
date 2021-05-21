@@ -8,7 +8,7 @@ const profileName = document.querySelector('.profile__name');
 const profileJob = document.querySelector('.profile__jod');
 const popupCards = document.querySelector('.popup-cards');
 const popupCardsCloseButton = popupCards.querySelector('.popup__img-close');
-const HandlerPhotoFormSubmit = document.querySelector('[name="form-cards"]');
+const handlerPhotoFormSubmit = document.querySelector('[name="form-cards"]');
 const openPopupCards = document.querySelector('.profile__button');
 const popupImage = document.querySelector('.popup-image');
 const popupImageCloseButton = popupImage.querySelector('.popup__img-close');
@@ -18,11 +18,15 @@ const titleInput = document.querySelector('.form-container__input_title');
 const imageInput = document.querySelector('.form-container__input_image');
 const popupFullPhoro = document.querySelector('.popup-image__photo');
 const popupFullText = document.querySelector('.popup-image__title');
+const popups = Array.from(document.querySelectorAll('.popup'));
+const inputList = Array.from(formProfile.querySelectorAll('.form-container__input'));
+const buttonElement = formProfile.querySelector('.form-container__button');
 
-formProfile.addEventListener('submit', HandlerProfileFormSubmit);
+formProfile.addEventListener('submit', handlerProfileFormSubmit);
 
 function openPopup(popup) {
   popup.classList.add('popup_is-opened');
+  toggleButtonState(buttonElement, inputList);
 }
 
 function closePopup(popup) {
@@ -56,13 +60,7 @@ function openProfilePopup() {
   openPopup(popupProfileEdit);
 };
 
-//function handleOverlayClick (event) {
-//    if (event.target === event.currentTarget) {
-//        togglePopup(event);
-//    }
-//}
-
-function HandlerProfileFormSubmit (evt) {
+function handlerProfileFormSubmit (evt) {
   evt.preventDefault();
   profileName.textContent = nameInput.value;
   profileJob.textContent = jobInput.value;
@@ -89,7 +87,7 @@ function addNewPhoto(image, title, alt) {
   return card;
 }
 
-HandlerPhotoFormSubmit.addEventListener('submit', function(evt) {
+handlerPhotoFormSubmit.addEventListener('submit', function(evt) {
   evt.preventDefault();
   const image = imageInput.value;
   const title = titleInput.value;
@@ -111,3 +109,24 @@ initialCards.forEach(function (element) {
   const newCard = addNewPhoto(element.link, element.name, element.alt);
   container.append(newCard);
 });
+
+popups.forEach((elem) => {
+  elem.addEventListener('click', (evt) => {
+  if (evt.target === evt.currentTarget) {
+    closePopup(elem);
+  }
+})
+  document.addEventListener('keydown', (evt) => {
+    if(evt.key === 'Escape') {
+      closePopup(elem);
+    }
+  })
+});
+
+enableValidation({
+  formSelector: '.form',
+  inputSelector: '.form-container__input',
+  submitButtonSelector: '.form-container__button',
+  inputErrorClass: 'form-container__input_type_error',
+  errorActiveClass: 'form-container__input-error_active'
+}); 

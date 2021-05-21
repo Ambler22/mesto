@@ -37,30 +37,37 @@
     <div class="popup popup-profile">
         <div class="popup__content">
             <h2 class="popup__title">Редактировать профиль</h2>
-            <form action="#" name="form-profile">
+            <form action="#" name="form-profile" class="form" novalidate>
                 <fieldset class="form-container">
-                    <input type="text" name="name" class="form-container__input" value="" required="Введите имя"
-                        tabindex="1">
-                    <input type="text" name="description" class="form-container__input" value=""
-                    required="Введите описание" tabindex="2">
-                    <button type="submit" class="form-container__button form-container__button_profile">Сохранить</button>
+                    <input id="profilename" type="text" name="name" class="form-container__input" value=""
+                        required="Введите имя" tabindex="1" minlength="2" maxlength="40">
+                    <span class="form-container__input-error" id="profilename-error"></span>
+                    <input id="profiledescription" type="text" name="description" class="form-container__input" value=""
+                        required="Введите описание" tabindex="2" minlength="2" maxlength="200">
+                    <span class="form-container__input-error" id="profiledescription-error"></span>
+                    <button type="submit"
+                        class="form-container__button form-container__button_profile">Сохранить</button>
                 </fieldset>
             </form>
             <button type="button" class="popup__img-close hover"></button>
         </div>
     </div>
-    
+
     <div class="popup popup-cards">
         <div class="popup__content">
             <h2 class="popup__title">Новое место</h2>
-            <form action="#" name="form-cards">
+            <form action="#" name="form-cards" class="form form-cards" novalidate>
                 <fieldset class="form-container">
-                    <input type="text" name="title" class="form-container__input form-container__input_title" value="" placeholder="Название"
-                        tabindex="1">
-                    <input type="url" name="image" class="form-container__input form-container__input_image" value=""
-                        placeholder="Ссылка на картинку" tabindex="2">
-                <button type="submit" class="form-container__button form-container__button_cards">Создать</button>
-            </fieldset>
+                    <input id="cardname" type="text" name="title"
+                        class="form-container__input form-container__input_title" value="" placeholder="Название"
+                        tabindex="1" minlength="2" maxlength="30" required>
+                    <span class="form-container__input-error" id="cardname-error"></span>
+                    <input id="cardurl" type="url" name="image"
+                        class="form-container__input form-container__input_image" value=""
+                        placeholder="Ссылка на картинку" tabindex="2" required>
+                    <span class="form-container__input-error" id="cardurl-error"></span>
+                    <button type="submit" class="form-container__button form-container__button_cards">Создать</button>
+                </fieldset>
             </form>
             <button type="button" class="popup__img-close hover"></button>
         </div>
@@ -86,6 +93,7 @@
     </template>
 
     <script src="./scripts/initial-Cards.js"></script>
+    <script src="./scripts/validate.js"></script>
     <script src="./scripts/index.js" defer></script>
 </body>
 

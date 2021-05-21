@@ -28,3 +28,11 @@
     opacity: 0.8;
     transition: 0.3s ease;
 }
+
+.form-container__button:disabled {
+    cursor: not-allowed;
+    color: #000000;
+    opacity: 0.2;
+    background: transparent;
+    border: 2px solid grey;
+  }
