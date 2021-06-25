@@ -6,17 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Место</title>
-    <link rel="stylesheet" href="./pages/index.css">
 </head>
 
 <body class="page">
     <header class="header page__content">
-        <img src="./images/header.svg" class="header__logo" alt="логотип">
+        <img src="<%=require('./images/header.svg')%>" class="header__logo" alt="логотип">
     </header>
     <main>
         <section class="profile page__content">
             <div class="profile__info">
-                <img src="./images/avatar.jpg" class="profile__avatar" alt="Аватар">
+                <img src="<%=require('./images/avatar.jpg')%>" class="profile__avatar" alt="Аватар">
                 <div class="profile__content">
                     <div class="profile__add">
                         <h1 class="profile__name">Жак-Ив Кусто</h1>
@@ -58,11 +57,11 @@
             <h2 class="popup__title">Новое место</h2>
             <form action="#" name="form-cards" class="form form-cards" novalidate>
                 <fieldset class="form-container">
-                    <input id="cardname" type="text" name="title"
+                    <input id="cardname" type="text" name="name"
                         class="form-container__input form-container__input_title" value="" placeholder="Название"
                         tabindex="1" minlength="2" maxlength="30" required>
                     <span class="form-container__input-error" id="cardname-error"></span>
-                    <input id="cardurl" type="url" name="image"
+                    <input id="cardurl" type="url" name="link"
                         class="form-container__input form-container__input_image" value=""
                         placeholder="Ссылка на картинку" tabindex="2" required>
                     <span class="form-container__input-error" id="cardurl-error"></span>
@@ -91,7 +90,6 @@
             </div>
         </div>
     </template>
-    <script type="module" src="./scripts/index.js"></script>
 </body>
 
 </html>
