@@ -1,5 +1,5 @@
 .popup__img-close {
-    background-image: url(../../../images/Close\ Icon1.svg);
+    background-image: url(../../../images/CloseIcon1.svg);
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
@@ -13,7 +13,7 @@
 
 @media (max-width: 720px) {
     .popup__img-close {
-        background-image: url(../../../images/Close\ Icon-mini.svg);
+        background-image: url(../../../images/CloseIcon-mini.svg);
         background-size: cover;
         background-repeat: no-repeat;
         top: -38px;
