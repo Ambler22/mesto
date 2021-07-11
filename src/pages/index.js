@@ -20,8 +20,6 @@ Promise.all([
 ]).then(([userData, cards]) => {
   userInfo.setUserInfo(userData);
   userId = userData._id;
-  console.log(userId);
-  console.log(cards);
 
   cardSection.renderAllCards(cards);
 });

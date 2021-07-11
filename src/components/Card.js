@@ -50,7 +50,6 @@ export class Card {
   
   render() {
     if(this._data.owner._id !== this._userId) {
-      console.log('чужие карточки');
       this._card.querySelector('.card__delete').remove();
     }
     return this._card;
