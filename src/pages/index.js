@@ -33,7 +33,7 @@ const profileFormValidator = new FormValidator(config, formProfile);
 const avatarFormValidator = new FormValidator(config, popupAvatarForm);
 
 const popupWithImage = new PopupWithImage('.popup-image');
-const popupDelete = new PopupWithSubmit('.popup__cards-delete');
+const popupDelete = new PopupWithSubmit('.popup__delete');
 
 const createCard = (data) => {
   const cardElement = new Card({
@@ -116,7 +116,7 @@ const editProfilePopup = new PopupWithForm(
 );
 
 const changeUserAvatar = new PopupWithForm(
-  '.popup__avatar-update',
+  '.popup__update',
   () => {
     changeUserAvatar.loadButton('Сохранение...');
     api.setUserAvatar({link: inputAvatar.value})
