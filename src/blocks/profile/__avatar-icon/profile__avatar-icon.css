@@ -1,5 +1,5 @@
-.profile__avatar_icon {
-    background-image: url(../../../../images/updateicon.png);
+.profile__avatar-icon {
+    background-image: url(../../../images/updateicon.png);
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 120px;
@@ -9,6 +9,6 @@
     z-index: -1;
 }
 
-.profile__avatar_icon:hover {
+.profile__avatar-icon:hover {
     z-index: 1;
 }
