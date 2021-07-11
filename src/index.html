@@ -15,7 +15,8 @@
     <main>
         <section class="profile page__content">
             <div class="profile__info">
-                <img src="<%=require('./images/avatar.jpg')%>" class="profile__avatar" alt="Аватар">
+                <img src="" class="profile__avatar" alt="Аватар">
+                <div class="profile__avatar_icon"></div>
                 <div class="profile__content">
                     <div class="profile__add">
                         <h1 class="profile__name">Жак-Ив Кусто</h1>
@@ -45,7 +46,7 @@
                         required="Введите описание" tabindex="2" minlength="2" maxlength="200">
                     <span class="form-container__input-error" id="profiledescription-error"></span>
                     <button type="submit"
-                        class="form-container__button form-container__button_profile">Сохранить</button>
+                        class="form-container__button form-container__button_profile popup__load">Сохранить</button>
                 </fieldset>
             </form>
             <button type="button" class="popup__img-close hover"></button>
@@ -65,7 +66,7 @@
                         class="form-container__input form-container__input_image" value=""
                         placeholder="Ссылка на картинку" tabindex="2" required>
                     <span class="form-container__input-error" id="cardurl-error"></span>
-                    <button type="submit" class="form-container__button form-container__button_cards">Создать</button>
+                    <button type="submit" class="form-container__button form-container__button_cards popup__load">Создать</button>
                 </fieldset>
             </form>
             <button type="button" class="popup__img-close hover"></button>
@@ -80,13 +81,44 @@
         </div>
     </div>
 
+    <div class="popup popup__cards_delete">
+        <div class="popup__content">
+            <h2 class="popup__title_cards_delete">Вы уверены?</h2>
+            <form action="#" name="form-cards_delete" class="form" novalidate>
+                <fieldset class="form-container">
+                <button type="submit" class="form-container__button form-container__button_cards_delete">Да</button>
+                </fieldset>
+            </form>
+            <button type="button" class="popup__img-close hover"></button>
+        </div>
+    </div>
+
+    <div class="popup popup__avatar_update">
+        <div class="popup__content">
+            <h2 class="popup__title">Обновить аватар</h2>
+            <form action="#" name="form-avatar_update" class="form" novalidate>
+                <fieldset class="form-container">
+                <input id="avatarurl" type="url" name="link"
+                        class="form-container__input form-container__input_avatar_update" value=""
+                        placeholder="Ссылка на картинку" tabindex="2" required>
+                    <span class="form-container__input-error" id="avatarurl-error"></span>
+                    <button type="submit" class="form-container__button form-container__button_avatar_update popup__load">Создать</button>
+                 </fieldset>
+            </form>
+            <button type="button" class="popup__img-close hover"></button>
+        </div>
+    </div>
+
     <template id="card-template">
         <div class="card">
             <button type="button" class="card__delete hover"></button>
             <img src="#" class="card__img" alt="Фото места">
             <div class="card__description">
                 <h2 class="card__text"></h2>
+                <div class="">
                 <button type="button" class="card__like" aria-label="Нравится"></button>
+                <p class="card__like_number"></p>
+                </div>
             </div>
         </div>
     </template>

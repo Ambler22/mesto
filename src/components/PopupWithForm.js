@@ -8,6 +8,8 @@ export class PopupWithForm extends Popup {
         this._formElement = this._popupElement.querySelector('.form');
         this._titleInput = this._formElement.querySelector('.form-container__input_title');
         this._imageInput = this._formElement.querySelector('.form-container__input_image');
+        this._submitButton = this._formElement.querySelector('.popup__load');
+        this._submitButtonText = this._submitButton.textContent;
     }
 
     _getInputValues() {
@@ -34,4 +36,12 @@ export class PopupWithForm extends Popup {
         super.close();
         this._formElement.reset();
       }
+
+    loadButton(text) {
+        this._submitButton.textContent = text;
+    }
+
+    notLoadButton() {
+        this._submitButton.textContent = this._submitButtonText;
+    }
 }
