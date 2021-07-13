@@ -53,7 +53,7 @@
         </div>
     </div>
 
-    <div class="popup popup-cards"> 
+    <div class="popup popup-cards">
         <div class="popup__content">
             <h2 class="popup__title">Новое место</h2>
             <form action="#" name="form-cards" class="form form-cards" novalidate>
@@ -62,11 +62,11 @@
                         class="form-container__input form-container__input_title" value="" placeholder="Название"
                         tabindex="1" minlength="2" maxlength="30" required>
                     <span class="form-container__input-error" id="cardname-error"></span>
-                    <input id="cardurl" type="url" name="link"
-                        class="form-container__input form-container__input_image" value=""
-                        placeholder="Ссылка на картинку" tabindex="2" required>
+                    <input id="cardurl" type="url" name="link" class="form-container__input form-container__input_image"
+                        value="" placeholder="Ссылка на картинку" tabindex="2" required>
                     <span class="form-container__input-error" id="cardurl-error"></span>
-                    <button type="submit" class="form-container__button form-container__button_cards popup__load">Создать</button>
+                    <button type="submit"
+                        class="form-container__button form-container__button_cards popup__load">Создать</button>
                 </fieldset>
             </form>
             <button type="button" class="popup__img-close hover"></button>
@@ -86,7 +86,7 @@
             <h2 class="popup__title-cardsdel">Вы уверены?</h2>
             <form action="#" name="form-cards_delete" class="form" novalidate>
                 <fieldset class="form-container">
-                <button type="submit" class="form-container__button form-container__button_cards_delete">Да</button>
+                    <button type="submit" class="form-container__button form-container__button_cards_delete">Да</button>
                 </fieldset>
             </form>
             <button type="button" class="popup__img-close hover"></button>
@@ -98,12 +98,13 @@
             <h2 class="popup__title">Обновить аватар</h2>
             <form action="#" name="form-avatar_update" class="form" novalidate>
                 <fieldset class="form-container">
-                <input id="avatarurl" type="url" name="link"
+                    <input id="avatarurl" type="url" name="link"
                         class="form-container__input form-container__input_avatar_update" value=""
                         placeholder="Ссылка на картинку" tabindex="2" required>
                     <span class="form-container__input-error" id="avatarurl-error"></span>
-                    <button type="submit" class="form-container__button form-container__button_avatar_update popup__load">Создать</button>
-                 </fieldset>
+                    <button type="submit"
+                        class="form-container__button form-container__button_avatar_update popup__load">Создать</button>
+                </fieldset>
             </form>
             <button type="button" class="popup__img-close hover"></button>
         </div>
@@ -116,8 +117,8 @@
             <div class="card__description">
                 <h2 class="card__text"></h2>
                 <div class="">
-                <button type="button" class="card__like" aria-label="Нравится"></button>
-                <p class="card__like_number"></p>
+                    <button type="button" class="card__like" aria-label="Нравится"></button>
+                    <p class="card__like_number"></p>
                 </div>
             </div>
         </div>

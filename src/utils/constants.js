@@ -12,13 +12,15 @@ export const inputsProfile = Array.from(popupProfile.querySelectorAll('.form-con
 export const inputAvatar = document.querySelector('.form-container__input_avatar_update');
 export const inputNameCard = document.querySelector('.form-container__input_title');
 export const inputLinkCard = document.querySelector('.form-container__input_image');
+export const inputsCard = Array.from(popupCards.querySelectorAll('.form-container__input'));
+export const ESC = "Escape";  
 export const config = {
-formSelector: '.form',
-inputSelector: '.form-container__input',
-submitButtonSelector: '.form-container__button',
-inputErrorClass: 'form-container__input_type_error',
-errorActiveClass: 'form-container__input-error_active',
-containerSelector: '.cards'
+  formSelector: '.form',
+  inputSelector: '.form-container__input',
+  submitButtonSelector: '.form-container__button',
+  inputErrorClass: 'form-container__input_type_error',
+  errorActiveClass: 'form-container__input-error_active',
+  containerSelector: '.cards'
 };
 export const apiData = {
   url: 'https://nomoreparties.co/v1/cohort-25',
